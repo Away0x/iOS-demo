@@ -19,6 +19,8 @@
 		0350347A231CBCD5009C75E5 /* AWVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03503479231CBCD5009C75E5 /* AWVideoViewController.m */; };
 		0350347E231CBD19009C75E5 /* AWRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0350347D231CBD19009C75E5 /* AWRecommendViewController.m */; };
 		03503482231CBD43009C75E5 /* AWMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03503481231CBD43009C75E5 /* AWMineViewController.m */; };
+		0350348A232148B0009C75E5 /* AWBaseServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 03503489232148B0009C75E5 /* AWBaseServices.m */; };
+		0350348D23214BE2009C75E5 /* AWNewsServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 0350348C23214BE2009C75E5 /* AWNewsServices.m */; };
 		C27059C7B6E3E7A96004D2B5 /* libPods-basic-demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 304729C09693A2253E11B7B1 /* libPods-basic-demo.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,10 @@
 		0350347D231CBD19009C75E5 /* AWRecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWRecommendViewController.m; sourceTree = "<group>"; };
 		03503480231CBD43009C75E5 /* AWMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWMineViewController.h; sourceTree = "<group>"; };
 		03503481231CBD43009C75E5 /* AWMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWMineViewController.m; sourceTree = "<group>"; };
+		03503488232148B0009C75E5 /* AWBaseServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWBaseServices.h; sourceTree = "<group>"; };
+		03503489232148B0009C75E5 /* AWBaseServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWBaseServices.m; sourceTree = "<group>"; };
+		0350348B23214BE2009C75E5 /* AWNewsServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWNewsServices.h; sourceTree = "<group>"; };
+		0350348C23214BE2009C75E5 /* AWNewsServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWNewsServices.m; sourceTree = "<group>"; };
 		304729C09693A2253E11B7B1 /* libPods-basic-demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-basic-demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93750210AB907F4BD594AD0A /* Pods-basic-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basic-demo.release.xcconfig"; path = "Target Support Files/Pods-basic-demo/Pods-basic-demo.release.xcconfig"; sourceTree = "<group>"; };
 		C35D943054BCBB0E72A2264E /* Pods-basic-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-basic-demo.debug.xcconfig"; path = "Target Support Files/Pods-basic-demo/Pods-basic-demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,9 +89,10 @@
 		03503448231CB941009C75E5 /* basic-demo */ = {
 			isa = PBXGroup;
 			children = (
+				0350348623214874009C75E5 /* Services */,
 				03503483231CC0FC009C75E5 /* Tools */,
 				03503475231CBC75009C75E5 /* icon.bundle */,
-				0350345F231CB95E009C75E5 /* Class */,
+				0350345F231CB95E009C75E5 /* Pages */,
 				03503449231CB941009C75E5 /* AppDelegate.h */,
 				0350344A231CB941009C75E5 /* AppDelegate.m */,
 				03503452231CB943009C75E5 /* Assets.xcassets */,
@@ -96,7 +103,7 @@
 			path = "basic-demo";
 			sourceTree = "<group>";
 		};
-		0350345F231CB95E009C75E5 /* Class */ = {
+		0350345F231CB95E009C75E5 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
 				03503460231CB967009C75E5 /* Base */,
@@ -105,7 +112,7 @@
 				03503463231CB98F009C75E5 /* Recommend */,
 				03503464231CB99A009C75E5 /* Mine */,
 			);
-			path = Class;
+			path = Pages;
 			sourceTree = "<group>";
 		};
 		03503460231CB967009C75E5 /* Base */ = {
@@ -202,6 +209,17 @@
 			children = (
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		0350348623214874009C75E5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				03503488232148B0009C75E5 /* AWBaseServices.h */,
+				03503489232148B0009C75E5 /* AWBaseServices.m */,
+				0350348B23214BE2009C75E5 /* AWNewsServices.h */,
+				0350348C23214BE2009C75E5 /* AWNewsServices.m */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		1A3CDEEDD8D35009270DAD9E /* Frameworks */ = {
@@ -326,6 +344,8 @@
 				03503472231CBB45009C75E5 /* AWNewsViewController.m in Sources */,
 				0350346F231CBB30009C75E5 /* AWBaseViewController.m in Sources */,
 				0350344B231CB941009C75E5 /* AppDelegate.m in Sources */,
+				0350348D23214BE2009C75E5 /* AWNewsServices.m in Sources */,
+				0350348A232148B0009C75E5 /* AWBaseServices.m in Sources */,
 				0350347E231CBD19009C75E5 /* AWRecommendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +492,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wutong.basic-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/**",
+					"${PODS_ROOT}/**",
+				);
 			};
 			name = Debug;
 		};
@@ -491,6 +515,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wutong.basic-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/**",
+					"${PODS_ROOT}/**",
+				);
 			};
 			name = Release;
 		};

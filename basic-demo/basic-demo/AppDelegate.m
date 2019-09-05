@@ -15,6 +15,7 @@
 #import "AWVideoViewController.h"
 #import "AWRecommendViewController.h"
 #import "AWMineViewController.h"
+#import "AFNetworking.h"
 
 @interface AppDelegate ()
 

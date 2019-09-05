@@ -7,5 +7,6 @@ target 'basic-demo' do
 
   # Pods for basic-demo
   pod 'AFNetworking', '~> 3.2.0'
+  pod 'SDWebImage', '~> 5.0'
 
 end
