@@ -9,11 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "AWBaseServices.h"
 
+@class AWNewsListItem;
+
+typedef void(^AWNewsServicesLoadListDataBlock)(BOOL success, NSMutableArray<AWNewsListItem *> * _Nullable data);
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AWNewsServices : AWBaseServices
 
-+ (void)loadList;
++ (void)loadList:(AWNewsServicesLoadListDataBlock)cb;
 
 @end
 
