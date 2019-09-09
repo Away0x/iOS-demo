@@ -9,8 +9,10 @@
 #import "AWNewsViewController.h"
 #import "AWNewsServices.h"
 #import "AWNewsListItem.h"
+#import "AWNewsTableViewCell.h"
+#import "AWNewsTableViewCellDeleteDialog.h"
 
-@interface AWNewsViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface AWNewsViewController ()<UITableViewDelegate, UITableViewDataSource, AWNewsTableViewCellDelegate>
 
 @property (nonatomic, strong, readwrite) UITableView *tableView;
 @property (nonatomic, strong, readwrite) NSArray *dataArray;
@@ -57,13 +59,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     AWNewsListItem *item = [_dataArray objectAtIndex:indexPath.row];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    
+    AWNewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+        cell = [[AWNewsTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+        cell.delegate = self;
     }
-    cell.textLabel.text = item.title;
-    cell.detailTextLabel.text = @"world";
-    cell.detailTextLabel.textColor = [UIColor grayColor];
+    [cell fillData:item];
+    
     return cell;
 }
 
@@ -73,6 +76,29 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"%@", indexPath);
+}
+
+#pragma mark - AWNewsTableViewCellDelegate
+
+// 点击了删除按钮
+- (void)tableViewCell:(UITableViewCell *)tableViewCell clickDeleteButton:(UIButton *)deleteButton {
+    // 动画
+    AWNewsTableViewCellDeleteDialog *dialog = [[AWNewsTableViewCellDeleteDialog alloc] initWithFrame:self.view.bounds];
+    CGRect rect = [tableViewCell convertRect:deleteButton.frame toView:nil];
+    
+    __weak typeof(self) wself = self;
+    [dialog showDeleteViewFromPoint:rect.origin clickBlock:^{
+        __strong typeof(wself) strongSelf = wself;
+        NSIndexPath *delIndexPath = [strongSelf.tableView indexPathForCell:tableViewCell];
+        if (strongSelf.dataArray.count > delIndexPath.row) {
+            // 删除数据
+            NSMutableArray *dataArrTemp = [strongSelf.dataArray mutableCopy];
+            [dataArrTemp removeObjectAtIndex:delIndexPath.row];
+            strongSelf.dataArray = [dataArrTemp copy];
+            // 删除 cell
+            [strongSelf.tableView deleteRowsAtIndexPaths:@[delIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        }
+    }];
 }
 
 @end

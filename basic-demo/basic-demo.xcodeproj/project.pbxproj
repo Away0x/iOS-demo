@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031550F5232627EB00751C26 /* AWNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 031550F4232627EB00751C26 /* AWNewsTableViewCell.m */; };
+		031550F82326402700751C26 /* AWNewsTableViewCellDeleteDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 031550F72326402700751C26 /* AWNewsTableViewCellDeleteDialog.m */; };
 		0350344B231CB941009C75E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0350344A231CB941009C75E5 /* AppDelegate.m */; };
 		03503453231CB943009C75E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03503452231CB943009C75E5 /* Assets.xcassets */; };
 		03503456231CB943009C75E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03503454231CB943009C75E5 /* LaunchScreen.storyboard */; };
@@ -26,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		031550F3232627EB00751C26 /* AWNewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWNewsTableViewCell.h; sourceTree = "<group>"; };
+		031550F4232627EB00751C26 /* AWNewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWNewsTableViewCell.m; sourceTree = "<group>"; };
+		031550F62326402700751C26 /* AWNewsTableViewCellDeleteDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWNewsTableViewCellDeleteDialog.h; sourceTree = "<group>"; };
+		031550F72326402700751C26 /* AWNewsTableViewCellDeleteDialog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWNewsTableViewCellDeleteDialog.m; sourceTree = "<group>"; };
 		03503446231CB941009C75E5 /* basic-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "basic-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03503449231CB941009C75E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0350344A231CB941009C75E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -247,6 +253,10 @@
 		0350349223225E1A009C75E5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				031550F3232627EB00751C26 /* AWNewsTableViewCell.h */,
+				031550F4232627EB00751C26 /* AWNewsTableViewCell.m */,
+				031550F62326402700751C26 /* AWNewsTableViewCellDeleteDialog.h */,
+				031550F72326402700751C26 /* AWNewsTableViewCellDeleteDialog.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -368,7 +378,9 @@
 				0350347A231CBCD5009C75E5 /* AWVideoViewController.m in Sources */,
 				03503459231CB943009C75E5 /* main.m in Sources */,
 				03503469231CBAC3009C75E5 /* AWBaseTabBarController.m in Sources */,
+				031550F82326402700751C26 /* AWNewsTableViewCellDeleteDialog.m in Sources */,
 				03503482231CBD43009C75E5 /* AWMineViewController.m in Sources */,
+				031550F5232627EB00751C26 /* AWNewsTableViewCell.m in Sources */,
 				0350346C231CBB02009C75E5 /* AWBaseNavigationController.m in Sources */,
 				03503472231CBB45009C75E5 /* AWNewsViewController.m in Sources */,
 				0350346F231CBB30009C75E5 /* AWBaseViewController.m in Sources */,
