@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		031550F5232627EB00751C26 /* AWNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 031550F4232627EB00751C26 /* AWNewsTableViewCell.m */; };
 		031550F82326402700751C26 /* AWNewsTableViewCellDeleteDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 031550F72326402700751C26 /* AWNewsTableViewCellDeleteDialog.m */; };
+		031550FB232780A300751C26 /* AWNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 031550FA232780A300751C26 /* AWNewsDetailViewController.m */; };
 		0350344B231CB941009C75E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0350344A231CB941009C75E5 /* AppDelegate.m */; };
 		03503453231CB943009C75E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03503452231CB943009C75E5 /* Assets.xcassets */; };
 		03503456231CB943009C75E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03503454231CB943009C75E5 /* LaunchScreen.storyboard */; };
@@ -32,6 +33,8 @@
 		031550F4232627EB00751C26 /* AWNewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWNewsTableViewCell.m; sourceTree = "<group>"; };
 		031550F62326402700751C26 /* AWNewsTableViewCellDeleteDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWNewsTableViewCellDeleteDialog.h; sourceTree = "<group>"; };
 		031550F72326402700751C26 /* AWNewsTableViewCellDeleteDialog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWNewsTableViewCellDeleteDialog.m; sourceTree = "<group>"; };
+		031550F9232780A300751C26 /* AWNewsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWNewsDetailViewController.h; sourceTree = "<group>"; };
+		031550FA232780A300751C26 /* AWNewsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWNewsDetailViewController.m; sourceTree = "<group>"; };
 		03503446231CB941009C75E5 /* basic-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "basic-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03503449231CB941009C75E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0350344A231CB941009C75E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,6 +101,7 @@
 		03503448231CB941009C75E5 /* basic-demo */ = {
 			isa = PBXGroup;
 			children = (
+				03503460231CB967009C75E5 /* Base */,
 				0350349023225DF4009C75E5 /* Common */,
 				03503483231CC0FC009C75E5 /* Tools */,
 				03503475231CBC75009C75E5 /* icon.bundle */,
@@ -115,7 +119,6 @@
 		0350345F231CB95E009C75E5 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				03503460231CB967009C75E5 /* Base */,
 				03503461231CB982009C75E5 /* News */,
 				03503462231CB989009C75E5 /* Video */,
 				03503463231CB98F009C75E5 /* Recommend */,
@@ -172,6 +175,8 @@
 			children = (
 				03503470231CBB45009C75E5 /* AWNewsViewController.h */,
 				03503471231CBB45009C75E5 /* AWNewsViewController.m */,
+				031550F9232780A300751C26 /* AWNewsDetailViewController.h */,
+				031550FA232780A300751C26 /* AWNewsDetailViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -380,6 +385,7 @@
 				03503469231CBAC3009C75E5 /* AWBaseTabBarController.m in Sources */,
 				031550F82326402700751C26 /* AWNewsTableViewCellDeleteDialog.m in Sources */,
 				03503482231CBD43009C75E5 /* AWMineViewController.m in Sources */,
+				031550FB232780A300751C26 /* AWNewsDetailViewController.m in Sources */,
 				031550F5232627EB00751C26 /* AWNewsTableViewCell.m in Sources */,
 				0350346C231CBB02009C75E5 /* AWBaseNavigationController.m in Sources */,
 				03503472231CBB45009C75E5 /* AWNewsViewController.m in Sources */,

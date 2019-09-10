@@ -11,6 +11,7 @@
 #import "AWNewsListItem.h"
 #import "AWNewsTableViewCell.h"
 #import "AWNewsTableViewCellDeleteDialog.h"
+#import "AWNewsDetailViewController.h"
 
 @interface AWNewsViewController ()<UITableViewDelegate, UITableViewDataSource, AWNewsTableViewCellDelegate>
 
@@ -75,7 +76,10 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"%@", indexPath);
+    AWNewsListItem *item = [_dataArray objectAtIndex:indexPath.row];
+
+    AWNewsDetailViewController *detailController = [[AWNewsDetailViewController alloc]initWithUrlString:item.articleUrl];
+    [self.navigationController pushViewController:detailController animated:YES];
 }
 
 #pragma mark - AWNewsTableViewCellDelegate
