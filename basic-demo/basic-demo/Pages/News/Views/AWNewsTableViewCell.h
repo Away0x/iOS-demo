@@ -1,7 +1,7 @@
 //
 //  AWNewsTableViewCell.h
 //  basic-demo
-//
+//  新闻列表 cell
 //  Created by wutong on 2019/9/9.
 //  Copyright © 2019 wutong. All rights reserved.
 //

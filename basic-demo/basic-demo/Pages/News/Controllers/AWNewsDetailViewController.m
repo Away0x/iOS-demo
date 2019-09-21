@@ -8,6 +8,7 @@
 
 #import "AWNewsDetailViewController.h"
 #import <WebKit/WebKit.h>
+#import "AWScreen.h"
 
 @interface AWNewsDetailViewController ()<WKNavigationDelegate>
 
@@ -30,14 +31,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(_shareArticle)];
+    
     [self.view addSubview:({
-        self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 88, self.view.frame.size.width, self.view.frame.size.height)];
+        self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, STATUSBARHEIGHT + 44, self.view.frame.size.width, self.view.frame.size.height - STATUSBARHEIGHT - 44)];
         self.webView.navigationDelegate = self;
         self.webView;
     })];
     
     [self.view addSubview:({
-        self.progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, 88, self.view.frame.size.width, 20)];
+        self.progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, STATUSBARHEIGHT + 44, self.view.frame.size.width, 20)];
         self.progressView;
     })];
     
@@ -57,6 +60,10 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     // 加载进度条
     self.progressView.progress = self.webView.estimatedProgress;
+}
+
+- (void)_shareArticle {
+    
 }
 
 @end

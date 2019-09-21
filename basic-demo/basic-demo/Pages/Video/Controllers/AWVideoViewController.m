@@ -8,7 +8,7 @@
 
 #import "AWVideoViewController.h"
 
-@interface AWVideoViewController ()
+@interface AWVideoViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
 @end
 
@@ -28,7 +28,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    // 流式布局
+    UICollectionViewFlowLayout *flowlayout = [[UICollectionViewFlowLayout alloc] init];
+    flowlayout.minimumLineSpacing = 10;
+    flowlayout.minimumInteritemSpacing = 10;
+    flowlayout.itemSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.width / 16 * 9);
+    
+    // collectionView
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowlayout];
+    collectionView.backgroundColor = [UIColor whiteColor];
+    
+    // inset 自动适配(刘海屏、非刘海屏滚动视图顶部的适配) 默认会自动适配
+    // 不需系统自动适配的话可设置其为 UIScrollViewContentInsetAdjustmentNever
+    // collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    
+    collectionView.delegate = self;
+    collectionView.dataSource = self;
+    
+    // 注册 item class
+    [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+}
+
+#pragma mark - UICollectionViewDelegate
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 20;
+}
+
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    if (!cell) {
+        
+    }
+    
+    return cell;
 }
 
 @end

@@ -10,6 +10,8 @@
 
 @interface AWRecommendViewController ()
 
+@property (nonatomic, strong, readwrite) UICollectionView *collectionView;
+
 @end
 
 @implementation AWRecommendViewController
@@ -28,7 +30,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self.view addSubview:({
+        self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:[UICollectionViewFlowLayout new]];
+        self.collectionView.backgroundColor = [UIColor whiteColor];
+        self.collectionView;
+    })];
+    
+    NSLog(@"%@", @"Asd");
 }
 
 @end

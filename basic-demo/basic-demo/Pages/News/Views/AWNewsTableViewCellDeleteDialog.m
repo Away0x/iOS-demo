@@ -7,6 +7,7 @@
 //
 
 #import "AWNewsTableViewCellDeleteDialog.h"
+#import "AWScreen.h"
 
 @interface AWNewsTableViewCellDeleteDialog ()
 
@@ -53,7 +54,7 @@
     [[UIApplication sharedApplication].keyWindow addSubview:self];
     
     [UIView animateWithDuration:1.f delay:0.f usingSpringWithDamping:0.5 initialSpringVelocity:0.5 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        self.deleteButton.frame = CGRectMake((self.bounds.size.width - 100) / 2, (self.bounds.size.height - 50) / 2, 100, 50);
+        self.deleteButton.frame = UIRect((self.bounds.size.width - 100) / 2, (self.bounds.size.height - 50) / 2, 100, 50);
     } completion:^(BOOL finished) {
         // 动画结束
     }];

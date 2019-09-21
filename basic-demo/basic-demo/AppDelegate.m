@@ -16,6 +16,7 @@
 #import "AWRecommendViewController.h"
 #import "AWMineViewController.h"
 #import "AFNetworking.h"
+#import "AWSplashView.h"
 
 @interface AppDelegate ()
 
@@ -41,6 +42,12 @@
     
     self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
+    
+    // 闪屏
+    [self.window addSubview:({
+        AWSplashView *splashView = [[AWSplashView alloc] initWithFrame:self.window.bounds];
+        splashView;
+    })];
     
     return YES;
 }

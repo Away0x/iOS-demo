@@ -12,6 +12,8 @@
 #import "AWNewsTableViewCell.h"
 #import "AWNewsTableViewCellDeleteDialog.h"
 #import "AWNewsDetailViewController.h"
+#import "AWScreen.h"
+#import "AWSearchBar.h"
 
 @interface AWNewsViewController ()<UITableViewDelegate, UITableViewDataSource, AWNewsTableViewCellDelegate>
 
@@ -50,6 +52,15 @@
         strongSelf.dataArray = data;
         [strongSelf.tableView reloadData];
     }];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.tabBarController.navigationItem setTitleView:({
+        AWSearchBar *bar = [[AWSearchBar alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH - UI(20), self.navigationController.navigationBar.bounds.size.height)];
+        bar;
+    })];
 }
 
 #pragma mark - table
