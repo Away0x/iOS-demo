@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>hybird</title>
+</head>
+<body>
+    <button id="btn" type="button">调用 ios 方法</button>
+
+    <script type="text/javascript">
+        alert(window.webkit)
+        function invokeIOSFunc() {
+            // 发消息给 ios (无法像 android 那样调用 ios 方法并获取返回值)
+            window.webkit.messageHandlers.iosDoAction.postMessage('我是来自 web 的数据')
+        }
+        window.onload = function() {
+            document.getElementById("btn").onclick = invokeIOSFunc
+        }
+        // 提供给 ios 调用的方法
+        window.webFunc = function (result) {
+            alert(result)
+            return "我是来自 web 的数据"
+        }
+    </script>
+</body>
+</html>
