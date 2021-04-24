@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SlideView" customModule="SliderWithScrollView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" text="Winnie the Pooh" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TSu-G4-eGC" userLabel="Title">
+                    <rect key="frame" x="0.0" y="403" width="414" height="38"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" systemColor="systemIndigoColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" text="Use this technique to make your slides, create your app, in a simple and effective way " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lOs-i3-z1K" userLabel="Description">
+                    <rect key="frame" x="41.5" y="441" width="331" height="421"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_onboarding_1" translatesAutoresizingMaskIntoConstraints="NO" id="YFi-UC-NX9" userLabel="ImageView">
+                    <rect key="frame" x="0.0" y="55" width="414" height="260"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="YFi-UC-NX9" secondAttribute="height" multiplier="207:130" id="hQ4-7F-yQf"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="lOs-i3-z1K" firstAttribute="top" secondItem="YFi-UC-NX9" secondAttribute="bottom" multiplier="1.4" id="7RR-nI-L3W"/>
+                <constraint firstItem="YFi-UC-NX9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8fs-Yi-h6e"/>
+                <constraint firstItem="lOs-i3-z1K" firstAttribute="top" secondItem="TSu-G4-eGC" secondAttribute="bottom" id="B2p-ui-nZO"/>
+                <constraint firstItem="TSu-G4-eGC" firstAttribute="top" secondItem="YFi-UC-NX9" secondAttribute="bottom" multiplier="1.28" id="IOr-eP-GDS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TSu-G4-eGC" secondAttribute="trailing" id="M6w-kj-RpV"/>
+                <constraint firstItem="lOs-i3-z1K" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="Oxc-dK-nC4"/>
+                <constraint firstItem="YFi-UC-NX9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="55" id="TzO-cx-Zvi"/>
+                <constraint firstItem="lOs-i3-z1K" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dsn-uK-2Qt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lOs-i3-z1K" secondAttribute="bottom" id="liA-KX-Y3J"/>
+                <constraint firstItem="YFi-UC-NX9" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="xpv-6t-6cw"/>
+                <constraint firstItem="TSu-G4-eGC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yIW-So-S9S"/>
+            </constraints>
+            <connections>
+                <outlet property="descView" destination="lOs-i3-z1K" id="FWe-ZH-FoW"/>
+                <outlet property="imageView" destination="YFi-UC-NX9" id="VGd-g9-LGA"/>
+                <outlet property="titleView" destination="TSu-G4-eGC" id="Gnu-UQ-WBH"/>
+            </connections>
+            <point key="canvasLocation" x="28.985507246376812" y="118.52678571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_onboarding_1" width="194.5" height="170"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
