@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="iv1-Hx-FF6">
-                                <rect key="frame" x="136.5" y="397" width="141" height="102"/>
+                                <rect key="frame" x="136.5" y="364" width="141" height="168"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyK-gz-BwL">
                                         <rect key="frame" x="29.5" y="0.0" width="82" height="36"/>
@@ -28,8 +28,16 @@
                                             <action selector="codeBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Qf-jT-JUf"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8j-Ok-kjy">
+                                        <rect key="frame" x="13.5" y="66" width="114" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="SnapKit 实现"/>
+                                        <connections>
+                                            <action selector="snapkitBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wxl-nI-WyW"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uud-5x-KFX">
-                                        <rect key="frame" x="0.0" y="66" width="141" height="36"/>
+                                        <rect key="frame" x="0.0" y="132" width="141" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="storyboard 实现"/>
                                         <connections>
@@ -190,7 +198,7 @@
         <image name="bg_login" width="1500" height="2668"/>
         <image name="login_logo" width="65" height="36"/>
         <namedColor name="main">
-            <color red="0.10196078431372549" green="0.69411764705882351" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.10199999809265137" green="0.6940000057220459" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

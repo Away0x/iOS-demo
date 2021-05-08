@@ -18,7 +18,13 @@ class ViewController: UIViewController {
         let vc = CodeLoginVC()
         vc.view.frame = UIScreen.main.bounds
         vc.modalPresentationStyle = .fullScreen
-        
+        present(vc, animated: true)
+    }
+    
+    @IBAction func snapkitBtnClicked(_ sender: UIButton) {
+        let vc = SnapKitLoginVC()
+        vc.view.frame = UIScreen.main.bounds
+        vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
     }
     
