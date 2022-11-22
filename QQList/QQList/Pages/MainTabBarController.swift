@@ -6,12 +6,17 @@
 //
 
 import UIKit
+import Alamofire
 
 class MainTabBarController: BaseTabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
+        
+        AF.request("https://httpbin.org/get").response { response in
+            debugPrint(response)
+        }
     }
 
 }
