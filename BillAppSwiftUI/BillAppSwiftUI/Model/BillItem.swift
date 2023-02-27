@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct BillItem: Identifiable {
-    let id = UUID()
+struct BillItem: Identifiable, Codable {
+    // let id = UUID() // 有初始值的常量属性, 解码时不会覆盖掉这个常量值
+    var id = UUID()
     var name: String
     var type: String
     var price: String

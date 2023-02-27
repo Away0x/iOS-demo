@@ -7,38 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0316B83E295EE87A00E4B7B4 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0316B83D295EE87A00E4B7B4 /* Bill.swift */; };
-		0316B843295F1B6200E4B7B4 /* BillItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0316B842295F1B6200E4B7B4 /* BillItemView.swift */; };
-		0316B845295F1FF000E4B7B4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0316B844295F1FF000E4B7B4 /* User.swift */; };
-		0316B847295F201200E4B7B4 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0316B846295F201200E4B7B4 /* Auth.swift */; };
-		0374E8E6293CDB6300451658 /* BillAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374E8E5293CDB6300451658 /* BillAppSwiftUIApp.swift */; };
-		0374E8E8293CDB6300451658 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374E8E7293CDB6300451658 /* ContentView.swift */; };
-		0374E8EA293CDB6500451658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0374E8E9293CDB6500451658 /* Assets.xcassets */; };
-		0374E8ED293CDB6500451658 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0374E8EC293CDB6500451658 /* Preview Assets.xcassets */; };
-		0374E8F4293CDBA200451658 /* BillItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374E8F3293CDBA200451658 /* BillItem.swift */; };
-		0374E8F6293CDE6400451658 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374E8F5293CDE6400451658 /* DetailView.swift */; };
-		03A1E2BA29AB9FE100E7D258 /* AppStorageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A1E2B929AB9FE100E7D258 /* AppStorageDemo.swift */; };
-		03C3025C29864B8700E9E368 /* DraftBillItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3025B29864B8700E9E368 /* DraftBillItem.swift */; };
+		0369760329AC5DD7004BD03D /* BillItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0369760229AC5DD7004BD03D /* BillItemView.swift */; };
+		0369760529AC5DE4004BD03D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0369760429AC5DE4004BD03D /* DetailView.swift */; };
+		0369760829AC6E91004BD03D /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0369760729AC6E91004BD03D /* Bill.swift */; };
+		0369760B29AC6F78004BD03D /* DraftBillItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0369760A29AC6F78004BD03D /* DraftBillItem.swift */; };
+		03A1E2C829ABA2F900E7D258 /* BillAppSwiftUI_CoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A1E2C729ABA2F900E7D258 /* BillAppSwiftUI_CoreDataApp.swift */; };
+		03A1E2CA29ABA2F900E7D258 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A1E2C929ABA2F900E7D258 /* ContentView.swift */; };
+		03A1E2CC29ABA2FA00E7D258 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A1E2CB29ABA2FA00E7D258 /* Assets.xcassets */; };
+		03A1E2CF29ABA2FA00E7D258 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A1E2CE29ABA2FA00E7D258 /* Preview Assets.xcassets */; };
+		03A1E2D129ABA2FA00E7D258 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A1E2D029ABA2FA00E7D258 /* PersistenceController.swift */; };
+		03A1E2D429ABA2FA00E7D258 /* Bill.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03A1E2D229ABA2FA00E7D258 /* Bill.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0316B83D295EE87A00E4B7B4 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
-		0316B842295F1B6200E4B7B4 /* BillItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillItemView.swift; sourceTree = "<group>"; };
-		0316B844295F1FF000E4B7B4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		0316B846295F201200E4B7B4 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
-		0374E8E2293CDB6300451658 /* BillAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0374E8E5293CDB6300451658 /* BillAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillAppSwiftUIApp.swift; sourceTree = "<group>"; };
-		0374E8E7293CDB6300451658 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0374E8E9293CDB6500451658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0374E8EC293CDB6500451658 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0374E8F3293CDBA200451658 /* BillItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillItem.swift; sourceTree = "<group>"; };
-		0374E8F5293CDE6400451658 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		03A1E2B929AB9FE100E7D258 /* AppStorageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageDemo.swift; sourceTree = "<group>"; };
-		03C3025B29864B8700E9E368 /* DraftBillItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftBillItem.swift; sourceTree = "<group>"; };
+		0369760229AC5DD7004BD03D /* BillItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillItemView.swift; sourceTree = "<group>"; };
+		0369760429AC5DE4004BD03D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		0369760729AC6E91004BD03D /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		0369760A29AC6F78004BD03D /* DraftBillItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftBillItem.swift; sourceTree = "<group>"; };
+		03A1E2C429ABA2F900E7D258 /* BillAppSwiftUI-CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BillAppSwiftUI-CoreData.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A1E2C729ABA2F900E7D258 /* BillAppSwiftUI_CoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillAppSwiftUI_CoreDataApp.swift; sourceTree = "<group>"; };
+		03A1E2C929ABA2F900E7D258 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		03A1E2CB29ABA2FA00E7D258 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03A1E2CE29ABA2FA00E7D258 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03A1E2D029ABA2FA00E7D258 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		03A1E2D329ABA2FA00E7D258 /* BillAppSwiftUI_CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BillAppSwiftUI_CoreData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0374E8DF293CDB6300451658 /* Frameworks */ = {
+		03A1E2C129ABA2F900E7D258 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,169 +44,156 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0316B83F295EE88600E4B7B4 /* ViewModel */ = {
+		036975FC29AC5CA4004BD03D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0316B83D295EE87A00E4B7B4 /* Bill.swift */,
-				0316B846295F201200E4B7B4 /* Auth.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		0316B840295F179F00E4B7B4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				0374E8F3293CDBA200451658 /* BillItem.swift */,
-				0316B844295F1FF000E4B7B4 /* User.swift */,
-				03C3025B29864B8700E9E368 /* DraftBillItem.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		0316B841295F17AD00E4B7B4 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				0374E8E7293CDB6300451658 /* ContentView.swift */,
-				0316B842295F1B6200E4B7B4 /* BillItemView.swift */,
-				0374E8F5293CDE6400451658 /* DetailView.swift */,
+				03A1E2C929ABA2F900E7D258 /* ContentView.swift */,
+				0369760429AC5DE4004BD03D /* DetailView.swift */,
+				0369760229AC5DD7004BD03D /* BillItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		0374E8D9293CDB6300451658 = {
+		0369760629AC6CBC004BD03D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				0374E8E4293CDB6300451658 /* BillAppSwiftUI */,
-				0374E8E3293CDB6300451658 /* Products */,
+				0369760729AC6E91004BD03D /* Bill.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0369760929AC6F6C004BD03D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0369760A29AC6F78004BD03D /* DraftBillItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03A1E2BB29ABA2F900E7D258 = {
+			isa = PBXGroup;
+			children = (
+				03A1E2C629ABA2F900E7D258 /* BillAppSwiftUI-CoreData */,
+				03A1E2C529ABA2F900E7D258 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0374E8E3293CDB6300451658 /* Products */ = {
+		03A1E2C529ABA2F900E7D258 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0374E8E2293CDB6300451658 /* BillAppSwiftUI.app */,
+				03A1E2C429ABA2F900E7D258 /* BillAppSwiftUI-CoreData.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0374E8E4293CDB6300451658 /* BillAppSwiftUI */ = {
+		03A1E2C629ABA2F900E7D258 /* BillAppSwiftUI-CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				03A1E2B829AB9FD200E7D258 /* Demo */,
-				0316B841295F17AD00E4B7B4 /* View */,
-				0316B83F295EE88600E4B7B4 /* ViewModel */,
-				0316B840295F179F00E4B7B4 /* Model */,
-				0374E8E5293CDB6300451658 /* BillAppSwiftUIApp.swift */,
-				0374E8E9293CDB6500451658 /* Assets.xcassets */,
-				0374E8EB293CDB6500451658 /* Preview Content */,
+				0369760929AC6F6C004BD03D /* Model */,
+				0369760629AC6CBC004BD03D /* ViewModel */,
+				036975FC29AC5CA4004BD03D /* View */,
+				03A1E2C729ABA2F900E7D258 /* BillAppSwiftUI_CoreDataApp.swift */,
+				03A1E2CB29ABA2FA00E7D258 /* Assets.xcassets */,
+				03A1E2D029ABA2FA00E7D258 /* PersistenceController.swift */,
+				03A1E2D229ABA2FA00E7D258 /* Bill.xcdatamodeld */,
+				03A1E2CD29ABA2FA00E7D258 /* Preview Content */,
 			);
-			path = BillAppSwiftUI;
+			path = "BillAppSwiftUI-CoreData";
 			sourceTree = "<group>";
 		};
-		0374E8EB293CDB6500451658 /* Preview Content */ = {
+		03A1E2CD29ABA2FA00E7D258 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				0374E8EC293CDB6500451658 /* Preview Assets.xcassets */,
+				03A1E2CE29ABA2FA00E7D258 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		03A1E2B829AB9FD200E7D258 /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				03A1E2B929AB9FE100E7D258 /* AppStorageDemo.swift */,
-			);
-			path = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0374E8E1293CDB6300451658 /* BillAppSwiftUI */ = {
+		03A1E2C329ABA2F900E7D258 /* BillAppSwiftUI-CoreData */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0374E8F0293CDB6500451658 /* Build configuration list for PBXNativeTarget "BillAppSwiftUI" */;
+			buildConfigurationList = 03A1E2D729ABA2FA00E7D258 /* Build configuration list for PBXNativeTarget "BillAppSwiftUI-CoreData" */;
 			buildPhases = (
-				0374E8DE293CDB6300451658 /* Sources */,
-				0374E8DF293CDB6300451658 /* Frameworks */,
-				0374E8E0293CDB6300451658 /* Resources */,
+				03A1E2C029ABA2F900E7D258 /* Sources */,
+				03A1E2C129ABA2F900E7D258 /* Frameworks */,
+				03A1E2C229ABA2F900E7D258 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BillAppSwiftUI;
-			productName = BillAppSwiftUI;
-			productReference = 0374E8E2293CDB6300451658 /* BillAppSwiftUI.app */;
+			name = "BillAppSwiftUI-CoreData";
+			productName = "BillAppSwiftUI-CoreData";
+			productReference = 03A1E2C429ABA2F900E7D258 /* BillAppSwiftUI-CoreData.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0374E8DA293CDB6300451658 /* Project object */ = {
+		03A1E2BC29ABA2F900E7D258 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					0374E8E1293CDB6300451658 = {
-						CreatedOnToolsVersion = 14.0.1;
+					03A1E2C329ABA2F900E7D258 = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = 0374E8DD293CDB6300451658 /* Build configuration list for PBXProject "BillAppSwiftUI" */;
+			buildConfigurationList = 03A1E2BF29ABA2F900E7D258 /* Build configuration list for PBXProject "BillAppSwiftUI-CoreData" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
-				"zh-Hans",
 			);
-			mainGroup = 0374E8D9293CDB6300451658;
-			productRefGroup = 0374E8E3293CDB6300451658 /* Products */;
+			mainGroup = 03A1E2BB29ABA2F900E7D258;
+			productRefGroup = 03A1E2C529ABA2F900E7D258 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0374E8E1293CDB6300451658 /* BillAppSwiftUI */,
+				03A1E2C329ABA2F900E7D258 /* BillAppSwiftUI-CoreData */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0374E8E0293CDB6300451658 /* Resources */ = {
+		03A1E2C229ABA2F900E7D258 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0374E8ED293CDB6500451658 /* Preview Assets.xcassets in Resources */,
-				0374E8EA293CDB6500451658 /* Assets.xcassets in Resources */,
+				03A1E2CF29ABA2FA00E7D258 /* Preview Assets.xcassets in Resources */,
+				03A1E2CC29ABA2FA00E7D258 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0374E8DE293CDB6300451658 /* Sources */ = {
+		03A1E2C029ABA2F900E7D258 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0374E8F4293CDBA200451658 /* BillItem.swift in Sources */,
-				0316B83E295EE87A00E4B7B4 /* Bill.swift in Sources */,
-				0316B843295F1B6200E4B7B4 /* BillItemView.swift in Sources */,
-				0374E8F6293CDE6400451658 /* DetailView.swift in Sources */,
-				03A1E2BA29AB9FE100E7D258 /* AppStorageDemo.swift in Sources */,
-				0316B847295F201200E4B7B4 /* Auth.swift in Sources */,
-				03C3025C29864B8700E9E368 /* DraftBillItem.swift in Sources */,
-				0374E8E8293CDB6300451658 /* ContentView.swift in Sources */,
-				0374E8E6293CDB6300451658 /* BillAppSwiftUIApp.swift in Sources */,
-				0316B845295F1FF000E4B7B4 /* User.swift in Sources */,
+				03A1E2D129ABA2FA00E7D258 /* PersistenceController.swift in Sources */,
+				0369760B29AC6F78004BD03D /* DraftBillItem.swift in Sources */,
+				0369760529AC5DE4004BD03D /* DetailView.swift in Sources */,
+				03A1E2D429ABA2FA00E7D258 /* Bill.xcdatamodeld in Sources */,
+				0369760329AC5DD7004BD03D /* BillItemView.swift in Sources */,
+				0369760829AC6E91004BD03D /* Bill.swift in Sources */,
+				03A1E2CA29ABA2F900E7D258 /* ContentView.swift in Sources */,
+				03A1E2C829ABA2F900E7D258 /* BillAppSwiftUI_CoreDataApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0374E8EE293CDB6500451658 /* Debug */ = {
+		03A1E2D529ABA2FA00E7D258 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -260,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +253,7 @@
 			};
 			name = Debug;
 		};
-		0374E8EF293CDB6500451658 /* Release */ = {
+		03A1E2D629ABA2FA00E7D258 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -314,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -324,14 +307,14 @@
 			};
 			name = Release;
 		};
-		0374E8F1293CDB6500451658 /* Debug */ = {
+		03A1E2D829ABA2FA00E7D258 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BillAppSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BillAppSwiftUI-CoreData/Preview Content\"";
 				DEVELOPMENT_TEAM = G4LKSBRZ93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -345,7 +328,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.away0x.BillAppSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.away0x.BillAppSwiftUI-CoreData";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -353,14 +336,14 @@
 			};
 			name = Debug;
 		};
-		0374E8F2293CDB6500451658 /* Release */ = {
+		03A1E2D929ABA2FA00E7D258 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BillAppSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BillAppSwiftUI-CoreData/Preview Content\"";
 				DEVELOPMENT_TEAM = G4LKSBRZ93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -374,7 +357,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.away0x.BillAppSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.away0x.BillAppSwiftUI-CoreData";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -385,25 +368,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0374E8DD293CDB6300451658 /* Build configuration list for PBXProject "BillAppSwiftUI" */ = {
+		03A1E2BF29ABA2F900E7D258 /* Build configuration list for PBXProject "BillAppSwiftUI-CoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0374E8EE293CDB6500451658 /* Debug */,
-				0374E8EF293CDB6500451658 /* Release */,
+				03A1E2D529ABA2FA00E7D258 /* Debug */,
+				03A1E2D629ABA2FA00E7D258 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0374E8F0293CDB6500451658 /* Build configuration list for PBXNativeTarget "BillAppSwiftUI" */ = {
+		03A1E2D729ABA2FA00E7D258 /* Build configuration list for PBXNativeTarget "BillAppSwiftUI-CoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0374E8F1293CDB6500451658 /* Debug */,
-				0374E8F2293CDB6500451658 /* Release */,
+				03A1E2D829ABA2FA00E7D258 /* Debug */,
+				03A1E2D929ABA2FA00E7D258 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		03A1E2D229ABA2FA00E7D258 /* Bill.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				03A1E2D329ABA2FA00E7D258 /* BillAppSwiftUI_CoreData.xcdatamodel */,
+			);
+			currentVersion = 03A1E2D329ABA2FA00E7D258 /* BillAppSwiftUI_CoreData.xcdatamodel */;
+			path = Bill.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 0374E8DA293CDB6300451658 /* Project object */;
+	rootObject = 03A1E2BC29ABA2F900E7D258 /* Project object */;
 }
