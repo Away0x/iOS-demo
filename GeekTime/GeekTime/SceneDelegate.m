@@ -33,15 +33,9 @@
     self.window.frame = [UIScreen mainScreen].bounds;
     
     NewsViewController *newsVC = [[NewsViewController alloc] init];
-    
     VideoViewController *videoVC = [[VideoViewController alloc] init];
-    videoVC.view.backgroundColor = [UIColor blueColor];
-    
     RecommendViewController *recommendVC = [[RecommendViewController alloc] init];
-    recommendVC.view.backgroundColor = [UIColor greenColor];
-    
     MineViewController *mineVC = [[MineViewController alloc] init];
-    mineVC.view.backgroundColor = [UIColor yellowColor];
     
     TabBarController *tabC = [[TabBarController alloc] init];
     CGRect tabFrame = tabC.tabBar.frame;
@@ -54,10 +48,9 @@
     self.window.rootViewController = navC;
     [self.window makeKeyAndVisible];
     
-    [self.window addSubview:({
-        SplashImageView *v = [[SplashImageView alloc] initWithFrame:self.window.bounds];
-        v;
-    })];
+
+    SplashImageView *splashView = [[SplashImageView alloc] initWithFrame:self.window.bounds];
+    [self.window addSubview:splashView];
 }
 
 

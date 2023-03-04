@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030730BD29B2E985006A762D /* ListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 030730BC29B2E985006A762D /* ListLoader.m */; };
+		030730C029B2EA4A006A762D /* ListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 030730BF29B2EA4A006A762D /* ListItem.m */; };
 		030ACDAB26478D3700D98CEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 030ACDAA26478D3700D98CEB /* AppDelegate.m */; };
 		030ACDAE26478D3700D98CEB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 030ACDAD26478D3700D98CEB /* SceneDelegate.m */; };
 		030ACDB626478D3900D98CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 030ACDB526478D3900D98CEB /* Assets.xcassets */; };
@@ -23,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		030730BB29B2E985006A762D /* ListLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListLoader.h; sourceTree = "<group>"; };
+		030730BC29B2E985006A762D /* ListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListLoader.m; sourceTree = "<group>"; };
+		030730BE29B2EA4A006A762D /* ListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListItem.h; sourceTree = "<group>"; };
+		030730BF29B2EA4A006A762D /* ListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListItem.m; sourceTree = "<group>"; };
 		030ACDA626478D3700D98CEB /* GeekTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeekTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		030ACDA926478D3700D98CEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		030ACDAA26478D3700D98CEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -158,6 +164,10 @@
 		036605C5264927700032DB6C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				030730BB29B2E985006A762D /* ListLoader.h */,
+				030730BC29B2E985006A762D /* ListLoader.m */,
+				030730BE29B2EA4A006A762D /* ListItem.h */,
+				030730BF29B2EA4A006A762D /* ListItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -300,6 +310,7 @@
 				TargetAttributes = {
 					030ACDA526478D3700D98CEB = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -338,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				036605D6264928150032DB6C /* VideoViewController.m in Sources */,
+				030730BD29B2E985006A762D /* ListLoader.m in Sources */,
 				036605DE2649282C0032DB6C /* MineViewController.m in Sources */,
 				03B82AC0266E20BE0058D79A /* NewsCell.m in Sources */,
 				030ACDAB26478D3700D98CEB /* AppDelegate.m in Sources */,
@@ -346,6 +358,7 @@
 				030ACDAE26478D3700D98CEB /* SceneDelegate.m in Sources */,
 				036605E326492E5B0032DB6C /* SplashImageView.m in Sources */,
 				036605D2264928060032DB6C /* NewsViewController.m in Sources */,
+				030730C029B2EA4A006A762D /* ListItem.m in Sources */,
 				036605DA264928230032DB6C /* RecommendViewController.m in Sources */,
 				03CEC807266A266D00BDA66E /* SearchBar.m in Sources */,
 				03CEC811266A2B6400BDA66E /* ScreenUtils.m in Sources */,
@@ -472,6 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G4LKSBRZ93;
 				INFOPLIST_FILE = GeekTime/Info.plist;
@@ -482,6 +496,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.away0x.GeekTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GeekTime/News/Model/GeekTime-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -491,6 +508,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G4LKSBRZ93;
 				INFOPLIST_FILE = GeekTime/Info.plist;
@@ -501,6 +519,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.away0x.GeekTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GeekTime/News/Model/GeekTime-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

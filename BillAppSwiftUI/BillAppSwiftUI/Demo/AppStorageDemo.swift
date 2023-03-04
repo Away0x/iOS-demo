@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct AppStorageDemo: View {
     // @State var nickName = ""
