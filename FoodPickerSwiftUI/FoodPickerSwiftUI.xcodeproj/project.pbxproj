@@ -7,18 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		035C87FA2A40514800FA0A29 /* FoodPickerSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035C87F92A40514800FA0A29 /* FoodPickerSwiftUIApp.swift */; };
-		035C87FC2A40514800FA0A29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035C87FB2A40514800FA0A29 /* ContentView.swift */; };
+		035C87FA2A40514800FA0A29 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035C87F92A40514800FA0A29 /* AppMain.swift */; };
+		035C87FC2A40514800FA0A29 /* FoodPickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035C87FB2A40514800FA0A29 /* FoodPickerScreen.swift */; };
 		035C87FE2A40514900FA0A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035C87FD2A40514900FA0A29 /* Assets.xcassets */; };
 		035C88012A40514900FA0A29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035C88002A40514900FA0A29 /* Preview Assets.xcassets */; };
+		035C880A2A414C2500FA0A29 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035C88092A414C2500FA0A29 /* Food.swift */; };
+		035C880C2A41AADA00FA0A29 /* SuffixWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035C880B2A41AADA00FA0A29 /* SuffixWrapper.swift */; };
+		035C880F2A41AB2B00FA0A29 /* PreviewDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035C880E2A41AB2B00FA0A29 /* PreviewDevice+.swift */; };
+		035C88172A41D81600FA0A29 /* FoodListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035C88162A41D81600FA0A29 /* FoodListScreen.swift */; };
+		03ED442C2A4DC10500C9FFD2 /* FoodForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED442B2A4DC10500C9FFD2 /* FoodForm.swift */; };
+		03ED44302A4DD05F00C9FFD2 /* SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED442F2A4DD05F00C9FFD2 /* SFSymbol.swift */; };
+		03ED44322A4DD0AE00C9FFD2 /* Animation+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED44312A4DD0AE00C9FFD2 /* Animation+.swift */; };
+		03ED44342A4DD0D500C9FFD2 /* AnyLayout+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED44332A4DD0D500C9FFD2 /* AnyLayout+.swift */; };
+		03ED44362A4DD0F300C9FFD2 /* AnyTransition+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED44352A4DD0F300C9FFD2 /* AnyTransition+.swift */; };
+		03ED44382A4DD10A00C9FFD2 /* ShapeStyle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED44372A4DD10A00C9FFD2 /* ShapeStyle+.swift */; };
+		03ED443A2A4DD11F00C9FFD2 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED44392A4DD11F00C9FFD2 /* View+.swift */; };
+		03ED443F2A4DD23D00C9FFD2 /* Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED443E2A4DD23D00C9FFD2 /* Sheet.swift */; };
+		03ED44412A4DD2B200C9FFD2 /* FoodDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED44402A4DD2B200C9FFD2 /* FoodDetailSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		035C87F62A40514800FA0A29 /* FoodPickerSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPickerSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		035C87F92A40514800FA0A29 /* FoodPickerSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPickerSwiftUIApp.swift; sourceTree = "<group>"; };
-		035C87FB2A40514800FA0A29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		035C87F92A40514800FA0A29 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
+		035C87FB2A40514800FA0A29 /* FoodPickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPickerScreen.swift; sourceTree = "<group>"; };
 		035C87FD2A40514900FA0A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		035C88002A40514900FA0A29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		035C88092A414C2500FA0A29 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		035C880B2A41AADA00FA0A29 /* SuffixWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixWrapper.swift; sourceTree = "<group>"; };
+		035C880E2A41AB2B00FA0A29 /* PreviewDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewDevice+.swift"; sourceTree = "<group>"; };
+		035C88162A41D81600FA0A29 /* FoodListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListScreen.swift; sourceTree = "<group>"; };
+		03ED442B2A4DC10500C9FFD2 /* FoodForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodForm.swift; sourceTree = "<group>"; };
+		03ED442F2A4DD05F00C9FFD2 /* SFSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbol.swift; sourceTree = "<group>"; };
+		03ED44312A4DD0AE00C9FFD2 /* Animation+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animation+.swift"; sourceTree = "<group>"; };
+		03ED44332A4DD0D500C9FFD2 /* AnyLayout+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyLayout+.swift"; sourceTree = "<group>"; };
+		03ED44352A4DD0F300C9FFD2 /* AnyTransition+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+.swift"; sourceTree = "<group>"; };
+		03ED44372A4DD10A00C9FFD2 /* ShapeStyle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapeStyle+.swift"; sourceTree = "<group>"; };
+		03ED44392A4DD11F00C9FFD2 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		03ED443E2A4DD23D00C9FFD2 /* Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheet.swift; sourceTree = "<group>"; };
+		03ED44402A4DD2B200C9FFD2 /* FoodDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +77,13 @@
 		035C87F82A40514800FA0A29 /* FoodPickerSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				035C87F92A40514800FA0A29 /* FoodPickerSwiftUIApp.swift */,
-				035C87FB2A40514800FA0A29 /* ContentView.swift */,
-				035C87FD2A40514900FA0A29 /* Assets.xcassets */,
+				035C87F92A40514800FA0A29 /* AppMain.swift */,
+				035C88132A41AB7F00FA0A29 /* Screens */,
+				035C88122A41AB7400FA0A29 /* Models */,
+				03ED442D2A4DD01B00C9FFD2 /* Extensions */,
+				035C880D2A41AB0100FA0A29 /* Utils */,
+				03ED442E2A4DD04D00C9FFD2 /* Constants */,
+				03ED44422A4DD38700C9FFD2 /* Resources */,
 				035C87FF2A40514900FA0A29 /* Preview Content */,
 			);
 			path = FoodPickerSwiftUI;
@@ -65,6 +95,87 @@
 				035C88002A40514900FA0A29 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		035C880D2A41AB0100FA0A29 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				035C880B2A41AADA00FA0A29 /* SuffixWrapper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		035C88122A41AB7400FA0A29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				035C88092A414C2500FA0A29 /* Food.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		035C88132A41AB7F00FA0A29 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				03ED443C2A4DD17000C9FFD2 /* FoodList */,
+				03ED443B2A4DD15000C9FFD2 /* FoodPicker */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		03ED442D2A4DD01B00C9FFD2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				035C880E2A41AB2B00FA0A29 /* PreviewDevice+.swift */,
+				03ED44312A4DD0AE00C9FFD2 /* Animation+.swift */,
+				03ED44332A4DD0D500C9FFD2 /* AnyLayout+.swift */,
+				03ED44352A4DD0F300C9FFD2 /* AnyTransition+.swift */,
+				03ED44372A4DD10A00C9FFD2 /* ShapeStyle+.swift */,
+				03ED44392A4DD11F00C9FFD2 /* View+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		03ED442E2A4DD04D00C9FFD2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				03ED442F2A4DD05F00C9FFD2 /* SFSymbol.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		03ED443B2A4DD15000C9FFD2 /* FoodPicker */ = {
+			isa = PBXGroup;
+			children = (
+				035C87FB2A40514800FA0A29 /* FoodPickerScreen.swift */,
+			);
+			path = FoodPicker;
+			sourceTree = "<group>";
+		};
+		03ED443C2A4DD17000C9FFD2 /* FoodList */ = {
+			isa = PBXGroup;
+			children = (
+				03ED443D2A4DD1CA00C9FFD2 /* Views */,
+				035C88162A41D81600FA0A29 /* FoodListScreen.swift */,
+			);
+			path = FoodList;
+			sourceTree = "<group>";
+		};
+		03ED443D2A4DD1CA00C9FFD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03ED443E2A4DD23D00C9FFD2 /* Sheet.swift */,
+				03ED442B2A4DC10500C9FFD2 /* FoodForm.swift */,
+				03ED44402A4DD2B200C9FFD2 /* FoodDetailSheet.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03ED44422A4DD38700C9FFD2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				035C87FD2A40514900FA0A29 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +248,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				035C87FC2A40514800FA0A29 /* ContentView.swift in Sources */,
-				035C87FA2A40514800FA0A29 /* FoodPickerSwiftUIApp.swift in Sources */,
+				035C880C2A41AADA00FA0A29 /* SuffixWrapper.swift in Sources */,
+				03ED44322A4DD0AE00C9FFD2 /* Animation+.swift in Sources */,
+				035C87FC2A40514800FA0A29 /* FoodPickerScreen.swift in Sources */,
+				03ED443A2A4DD11F00C9FFD2 /* View+.swift in Sources */,
+				03ED44412A4DD2B200C9FFD2 /* FoodDetailSheet.swift in Sources */,
+				03ED44342A4DD0D500C9FFD2 /* AnyLayout+.swift in Sources */,
+				03ED44362A4DD0F300C9FFD2 /* AnyTransition+.swift in Sources */,
+				035C88172A41D81600FA0A29 /* FoodListScreen.swift in Sources */,
+				035C880F2A41AB2B00FA0A29 /* PreviewDevice+.swift in Sources */,
+				03ED442C2A4DC10500C9FFD2 /* FoodForm.swift in Sources */,
+				03ED44382A4DD10A00C9FFD2 /* ShapeStyle+.swift in Sources */,
+				035C87FA2A40514800FA0A29 /* AppMain.swift in Sources */,
+				035C880A2A414C2500FA0A29 /* Food.swift in Sources */,
+				03ED44302A4DD05F00C9FFD2 /* SFSymbol.swift in Sources */,
+				03ED443F2A4DD23D00C9FFD2 /* Sheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
