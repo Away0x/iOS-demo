@@ -17,27 +17,30 @@ struct FoodPickerScreen: View {
     private let foods = Food.examples
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 30) {
-                foodImage
-                
-                Text("今天吃什么?").bold()
-                
-                selectedFoodInfoView
-                
-                Spacer().layoutPriority(1)
-                
-                selectedFoodButton
-                resetButton
+        GeometryReader { proxy in
+            ScrollView {
+                VStack(spacing: 30) {
+                    foodImage
+                    
+                    Text("今天吃什么?").bold()
+                    
+                    selectedFoodInfoView
+                    
+                    Spacer().layoutPriority(1)
+                    
+                    selectedFoodButton
+                    resetButton
+                }
+                .padding()
+                .maxWidth()
+                .frame(minHeight: proxy.size.height)
+                .font(.title)
+                .mainButtonStyle()
+                .animation(.mySpring, value: shouldShowDetail)
+                .animation(.myEase, value: selectedFood)
             }
-            .padding()
-            .frame(minHeight: UIScreen.main.bounds.height - 100)
-            .font(.title)
-            .mainButtonStyle()
-            .animation(.mySpring, value: shouldShowDetail)
-            .animation(.myEase, value: selectedFood)
+            .background(.bg2)
         }
-        .background(.bg2)
     }
 }
 
@@ -85,17 +88,17 @@ private extension FoodPickerScreen {
                 HStack {
                     VStack(spacing: 12) {
                         Text("蛋白质")
-                        Text(selectedFood!.$protein)
+                        Text(selectedFood!.$protein.description)
                     }
                     Divider().frame(width: 1).padding(.horizontal)
                     VStack(spacing: 12) {
                         Text("脂肪")
-                        Text(selectedFood!.$fat)
+                        Text(selectedFood!.$fat.description)
                     }
                     Divider().frame(width: 1).padding(.horizontal)
                     VStack(spacing: 12) {
                         Text("碳水")
-                        Text(selectedFood!.$carb)
+                        Text(selectedFood!.$carb.description)
                     }
                 }
                 .font(.title3)
@@ -118,9 +121,9 @@ private extension FoodPickerScreen {
                         .padding(.horizontal, -10)
                     
                     GridRow {
-                        Text(selectedFood!.$protein)
-                        Text(selectedFood!.$fat)
-                        Text(selectedFood!.$carb)
+                        Text(selectedFood!.$protein.description)
+                        Text(selectedFood!.$fat.description)
+                        Text(selectedFood!.$carb.description)
                     }
                 }
                 .font(.title3)
@@ -138,7 +141,7 @@ private extension FoodPickerScreen {
         if let selectedFood {
             foodNameView
             
-            Text("热量 \(selectedFood.$calorie)").font(.title2)
+            Text("热量 \(selectedFood.$calorie.description)").font(.title2)
             
             foodDetailView
         }

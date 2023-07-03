@@ -8,13 +8,13 @@
 import Foundation
 
 struct Food: Equatable, Identifiable {
-    let id = UUID()
+    var id = UUID()
     var name: String
     var image: String
-    @Suffix("大卡") var calorie: Double = .zero
-    @Suffix("g") var carb: Double      = .zero
-    @Suffix("g") var fat: Double       = .zero
-    @Suffix("g") var protein: Double   = .zero
+    @Energy var calorie: Double
+    @Weight var carb: Double
+    @Weight var fat: Double
+    @Weight var protein: Double
     
 //    var calorieString: String = { calorie.formatted() + " g" }
 }
@@ -22,7 +22,29 @@ struct Food: Equatable, Identifiable {
 
 // MARK: statics
 extension Food {
-    static var new: Food { Food(name: "", image: "") }
+    static var new: Food {
+        let preferredWeightUnit = MyWeightUnit.getPreferredUnit() // 从 UserDefaults 中获取用户的偏好 unit
+        let preferredEnergyUnit = MyEnergyUnit.getPreferredUnit()
+        
+        return Food(
+            name: "",
+            image: "",
+            calorie: .init(wrappedValue: .zero, preferredEnergyUnit),
+            carb: .init(wrappedValue: .zero, preferredWeightUnit),
+            fat: .init(wrappedValue: .zero, preferredWeightUnit),
+            protein: .init(wrappedValue: .zero, preferredWeightUnit)
+        )
+    }
+    
+    private init(id: UUID = UUID(), name: String, image: String, calorie: Double, carb: Double, fat: Double, protein: Double) {
+        self.id = id
+        self.name = name
+        self.image = image
+        self._calorie = .init(wrappedValue: calorie, .cal)
+        self._carb    = .init(wrappedValue: carb, .gram)
+        self._fat     = .init(wrappedValue: fat, .gram)
+        self._protein = .init(wrappedValue: protein, .gram)
+    }
     
     static let examples = [
         Food(name: "漢堡", image: "🍔", calorie: 294, carb: 14, fat: 24, protein: 17),
@@ -36,3 +58,5 @@ extension Food {
         Food(name: "關東煮", image: "🥘", calorie: 80, carb: 4, fat: 4, protein: 6),
     ]
 }
+
+extension Food: Codable { }

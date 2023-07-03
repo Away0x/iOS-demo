@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0325688C2A4F15520052E3A5 /* MyUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0325688B2A4F15520052E3A5 /* MyUnit.swift */; };
+		0325688E2A4F156B0052E3A5 /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0325688D2A4F156B0052E3A5 /* UserDefaultsKey.swift */; };
+		032568902A4F158A0052E3A5 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0325688F2A4F158A0052E3A5 /* HomeScreen.swift */; };
+		032568922A4F15E50052E3A5 /* AppStorage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032568912A4F15E50052E3A5 /* AppStorage+.swift */; };
+		032568942A4F20270052E3A5 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032568932A4F20270052E3A5 /* SettingsScreen.swift */; };
+		032568962A500BA20052E3A5 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032568952A500BA20052E3A5 /* Array+.swift */; };
+		0325689E2A51A9B90052E3A5 /* FoodPickerSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0325689D2A51A9B90052E3A5 /* FoodPickerSwiftUITests.swift */; };
+		032568A72A52B0030052E3A5 /* MyUnitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032568A62A52B0030052E3A5 /* MyUnitProtocol.swift */; };
+		032568AB2A52B2500052E3A5 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032568AA2A52B2500052E3A5 /* Dialog.swift */; };
+		032568AD2A52BED50052E3A5 /* ForEach+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032568AC2A52BED50052E3A5 /* ForEach+.swift */; };
 		035C87FA2A40514800FA0A29 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035C87F92A40514800FA0A29 /* AppMain.swift */; };
 		035C87FC2A40514800FA0A29 /* FoodPickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035C87FB2A40514800FA0A29 /* FoodPickerScreen.swift */; };
 		035C87FE2A40514900FA0A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 035C87FD2A40514900FA0A29 /* Assets.xcassets */; };
@@ -26,7 +36,28 @@
 		03ED44412A4DD2B200C9FFD2 /* FoodDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03ED44402A4DD2B200C9FFD2 /* FoodDetailSheet.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0325689F2A51A9B90052E3A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 035C87EE2A40514800FA0A29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 035C87F52A40514800FA0A29;
+			remoteInfo = FoodPickerSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0325688B2A4F15520052E3A5 /* MyUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUnit.swift; sourceTree = "<group>"; };
+		0325688D2A4F156B0052E3A5 /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
+		0325688F2A4F158A0052E3A5 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		032568912A4F15E50052E3A5 /* AppStorage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStorage+.swift"; sourceTree = "<group>"; };
+		032568932A4F20270052E3A5 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		032568952A500BA20052E3A5 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		0325689B2A51A9B90052E3A5 /* FoodPickerSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodPickerSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0325689D2A51A9B90052E3A5 /* FoodPickerSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPickerSwiftUITests.swift; sourceTree = "<group>"; };
+		032568A62A52B0030052E3A5 /* MyUnitProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUnitProtocol.swift; sourceTree = "<group>"; };
+		032568AA2A52B2500052E3A5 /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
+		032568AC2A52BED50052E3A5 /* ForEach+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForEach+.swift"; sourceTree = "<group>"; };
 		035C87F62A40514800FA0A29 /* FoodPickerSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPickerSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		035C87F92A40514800FA0A29 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
 		035C87FB2A40514800FA0A29 /* FoodPickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPickerScreen.swift; sourceTree = "<group>"; };
@@ -48,6 +79,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		032568982A51A9B90052E3A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		035C87F32A40514800FA0A29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -58,10 +96,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0325689C2A51A9B90052E3A5 /* FoodPickerSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0325689D2A51A9B90052E3A5 /* FoodPickerSwiftUITests.swift */,
+			);
+			path = FoodPickerSwiftUITests;
+			sourceTree = "<group>";
+		};
+		032568A82A52B22D0052E3A5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				032568A92A52B23E0052E3A5 /* Constants */,
+				032568932A4F20270052E3A5 /* SettingsScreen.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		032568A92A52B23E0052E3A5 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				032568AA2A52B2500052E3A5 /* Dialog.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		035C87ED2A40514800FA0A29 = {
 			isa = PBXGroup;
 			children = (
 				035C87F82A40514800FA0A29 /* FoodPickerSwiftUI */,
+				0325689C2A51A9B90052E3A5 /* FoodPickerSwiftUITests */,
 				035C87F72A40514800FA0A29 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				035C87F62A40514800FA0A29 /* FoodPickerSwiftUI.app */,
+				0325689B2A51A9B90052E3A5 /* FoodPickerSwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				035C880B2A41AADA00FA0A29 /* SuffixWrapper.swift */,
+				032568A62A52B0030052E3A5 /* MyUnitProtocol.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -116,8 +182,10 @@
 		035C88132A41AB7F00FA0A29 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				032568A82A52B22D0052E3A5 /* Settings */,
 				03ED443C2A4DD17000C9FFD2 /* FoodList */,
 				03ED443B2A4DD15000C9FFD2 /* FoodPicker */,
+				0325688F2A4F158A0052E3A5 /* HomeScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -131,6 +199,9 @@
 				03ED44352A4DD0F300C9FFD2 /* AnyTransition+.swift */,
 				03ED44372A4DD10A00C9FFD2 /* ShapeStyle+.swift */,
 				03ED44392A4DD11F00C9FFD2 /* View+.swift */,
+				032568912A4F15E50052E3A5 /* AppStorage+.swift */,
+				032568952A500BA20052E3A5 /* Array+.swift */,
+				032568AC2A52BED50052E3A5 /* ForEach+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -139,6 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				03ED442F2A4DD05F00C9FFD2 /* SFSymbol.swift */,
+				0325688B2A4F15520052E3A5 /* MyUnit.swift */,
+				0325688D2A4F156B0052E3A5 /* UserDefaultsKey.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -181,6 +254,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0325689A2A51A9B90052E3A5 /* FoodPickerSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032568A12A51A9B90052E3A5 /* Build configuration list for PBXNativeTarget "FoodPickerSwiftUITests" */;
+			buildPhases = (
+				032568972A51A9B90052E3A5 /* Sources */,
+				032568982A51A9B90052E3A5 /* Frameworks */,
+				032568992A51A9B90052E3A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				032568A02A51A9B90052E3A5 /* PBXTargetDependency */,
+			);
+			name = FoodPickerSwiftUITests;
+			productName = FoodPickerSwiftUITests;
+			productReference = 0325689B2A51A9B90052E3A5 /* FoodPickerSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		035C87F52A40514800FA0A29 /* FoodPickerSwiftUI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 035C88042A40514900FA0A29 /* Build configuration list for PBXNativeTarget "FoodPickerSwiftUI" */;
@@ -208,6 +299,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					0325689A2A51A9B90052E3A5 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 035C87F52A40514800FA0A29;
+					};
 					035C87F52A40514800FA0A29 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -227,11 +322,19 @@
 			projectRoot = "";
 			targets = (
 				035C87F52A40514800FA0A29 /* FoodPickerSwiftUI */,
+				0325689A2A51A9B90052E3A5 /* FoodPickerSwiftUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		032568992A51A9B90052E3A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		035C87F42A40514800FA0A29 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,6 +347,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		032568972A51A9B90052E3A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0325689E2A51A9B90052E3A5 /* FoodPickerSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		035C87F22A40514800FA0A29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,13 +364,22 @@
 				035C87FC2A40514800FA0A29 /* FoodPickerScreen.swift in Sources */,
 				03ED443A2A4DD11F00C9FFD2 /* View+.swift in Sources */,
 				03ED44412A4DD2B200C9FFD2 /* FoodDetailSheet.swift in Sources */,
+				0325688C2A4F15520052E3A5 /* MyUnit.swift in Sources */,
 				03ED44342A4DD0D500C9FFD2 /* AnyLayout+.swift in Sources */,
 				03ED44362A4DD0F300C9FFD2 /* AnyTransition+.swift in Sources */,
+				032568942A4F20270052E3A5 /* SettingsScreen.swift in Sources */,
+				0325688E2A4F156B0052E3A5 /* UserDefaultsKey.swift in Sources */,
 				035C88172A41D81600FA0A29 /* FoodListScreen.swift in Sources */,
 				035C880F2A41AB2B00FA0A29 /* PreviewDevice+.swift in Sources */,
 				03ED442C2A4DC10500C9FFD2 /* FoodForm.swift in Sources */,
+				032568A72A52B0030052E3A5 /* MyUnitProtocol.swift in Sources */,
+				032568962A500BA20052E3A5 /* Array+.swift in Sources */,
 				03ED44382A4DD10A00C9FFD2 /* ShapeStyle+.swift in Sources */,
+				032568922A4F15E50052E3A5 /* AppStorage+.swift in Sources */,
+				032568AB2A52B2500052E3A5 /* Dialog.swift in Sources */,
 				035C87FA2A40514800FA0A29 /* AppMain.swift in Sources */,
+				032568902A4F158A0052E3A5 /* HomeScreen.swift in Sources */,
+				032568AD2A52BED50052E3A5 /* ForEach+.swift in Sources */,
 				035C880A2A414C2500FA0A29 /* Food.swift in Sources */,
 				03ED44302A4DD05F00C9FFD2 /* SFSymbol.swift in Sources */,
 				03ED443F2A4DD23D00C9FFD2 /* Sheet.swift in Sources */,
@@ -268,7 +388,59 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		032568A02A51A9B90052E3A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 035C87F52A40514800FA0A29 /* FoodPickerSwiftUI */;
+			targetProxy = 0325689F2A51A9B90052E3A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		032568A22A51A9B90052E3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4LKSBRZ93;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.away0x.FoodPickerSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodPickerSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FoodPickerSwiftUI";
+			};
+			name = Debug;
+		};
+		032568A32A51A9B90052E3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4LKSBRZ93;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.away0x.FoodPickerSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodPickerSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FoodPickerSwiftUI";
+			};
+			name = Release;
+		};
 		035C88022A40514900FA0A29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -444,6 +616,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		032568A12A51A9B90052E3A5 /* Build configuration list for PBXNativeTarget "FoodPickerSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032568A22A51A9B90052E3A5 /* Debug */,
+				032568A32A51A9B90052E3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		035C87F12A40514800FA0A29 /* Build configuration list for PBXProject "FoodPickerSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

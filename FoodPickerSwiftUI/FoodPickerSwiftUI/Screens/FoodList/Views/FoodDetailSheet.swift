@@ -33,14 +33,16 @@ extension FoodListScreen {
                     .minimumScaleFactor(shouldUseVStack ? 1 : 0.5)
                 
                 Grid(horizontalSpacing: 30, verticalSpacing: 12) {
-                    buildNutritionView(title: "熱量", value: food.$calorie)
-                    buildNutritionView(title: "蛋白質", value: food.$protein)
-                    buildNutritionView(title: "脂肪", value: food.$fat)
-                    buildNutritionView(title: "碳水", value: food.$carb)
+                    buildNutritionView(title: "熱量", value: food.$calorie.description)
+                    buildNutritionView(title: "蛋白質", value: food.$protein.description)
+                    buildNutritionView(title: "脂肪", value: food.$fat.description)
+                    buildNutritionView(title: "碳水", value: food.$carb.description)
                 }
             }
             .padding()
             .padding(.vertical)
+            .maxWidth()
+            .background(.groupBg2)
 //            .overlay {
 //                // 获取到 view 的尺寸信息, 用 preference 来传递给其他 view
 //                // https://www.jianshu.com/p/8fae61b5993c
