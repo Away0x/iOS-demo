@@ -17,7 +17,8 @@ final class SuffixTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        UserDefaults.standard.removePersistentDomain(forName: #file)
+        UserDefaults.standard.removePersistentDomain(forName: #file) // 清理私有的 userDefaults
+//        UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier) // 清理所有userDefaults
     }
     
     
